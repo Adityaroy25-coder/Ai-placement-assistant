@@ -1,4 +1,4 @@
-import API_BASE_URL from "./api";
+import API_BASE_URL from "../api";
 import JobRecommendations from "./components/JobRecommendations";
 import GitHubAnalysis from "./components/GitHubAnalysis";
 import JobReadiness from "./components/JobReadiness";
