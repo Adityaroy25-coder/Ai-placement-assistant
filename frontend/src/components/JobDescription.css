@@ -1,0 +1,131 @@
+.job-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: #f4f7ff;
+  display: flex;
+  justify-content: center;
+}
+
+.job-card {
+  width: 800px;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.job-icon {
+  font-size: 50px;
+  text-align: center;
+}
+
+.job-card h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.job-card p {
+  text-align: center;
+  color: #64748b;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.job-textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 18px;
+  border: 2px solid #dbe5f5;
+  border-radius: 12px;
+  resize: vertical;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.job-textarea:focus {
+  border-color: #2563eb;
+}
+
+.job-analyze-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.job-analyze-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.job-result {
+  margin-top: 35px;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 15px;
+}
+
+.job-result h2 {
+  margin-top: 0;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* =================================
+   BACK TO DASHBOARD BUTTON
+   ================================= */
+
+.job-page {
+  position: relative;
+}
+
+.job-page .back-btn {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: block;
+  width: auto;
+  min-width: 210px;
+
+  padding: 12px 24px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  border: 1px solid #999;
+  border-radius: 4px;
+
+  background: white;
+  color: #111;
+
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.job-page .back-btn:hover {
+  background: #f3f4f6;
+}

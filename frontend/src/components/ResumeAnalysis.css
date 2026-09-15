@@ -1,0 +1,92 @@
+.analysis-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #f4f7fc;
+}
+
+.analysis-card {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.analysis-card h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.analysis-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.analysis-section {
+  margin-top: 35px;
+}
+
+.analysis-section h2 {
+  margin-bottom: 20px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.info-box {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.info-box span {
+  display: block;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.info-box strong {
+  display: block;
+  word-break: break-word;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tag {
+  background: #e0edff;
+  color: #2563eb;
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.ats-box {
+  margin-top: 40px;
+  padding: 30px;
+  text-align: center;
+  background: #f8fafc;
+  border-radius: 15px;
+}
+
+.ats-score {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 15px 0;
+}
+
+.ats-box p {
+  color: #64748b;
+}
