@@ -1,10 +1,6 @@
 import { useState } from "react";
 
-function SkillGap({
-  resumeData,
-  onBack,
-  onAnalysisComplete
-}) {
+function SkillGap({ resumeData, onBack }) {
   const [jobDescription, setJobDescription] = useState("");
   const [result, setResult] = useState(null);
 
@@ -77,19 +73,12 @@ function SkillGap({
           )
         : 0;
 
-        const skillGapData = {
+    setResult({
       requiredSkills,
       matchingSkills,
       missingSkills,
       matchScore
-    };
-
-    // Save Skill Gap result for Dashboard
-  if (onAnalysisComplete) {
-  onAnalysisComplete(skillGapData);
-}
-
-setResult(skillGapData);
+    });
   };
 
   return (

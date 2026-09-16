@@ -20,14 +20,6 @@ function App() {
   const [showUpload, setShowUpload] = useState(false);
   const [page, setPage] = useState("home");
   const [user, setUser] = useState(null);
-  const [jobAnalysis, setJobAnalysis] = useState(() => {
-  const savedJobAnalysis =
-    localStorage.getItem("jobAnalysis");
-
-  return savedJobAnalysis
-    ? JSON.parse(savedJobAnalysis)
-    : null;
-});
   const [resumeData, setResumeData] = useState(() => {
   const savedResumeData =
     localStorage.getItem("resumeData");
@@ -145,13 +137,12 @@ useEffect(() => {
   if (page === "dashboard") {
     return (
       <Dashboard
-  user={user}
-  resumeData={resumeData}
-  jobAnalysis={jobAnalysis}
-  onLogout={handleLogout}
-  onResumeAnalysis={() => setShowUpload(true)}
-  setPage={setPage}
-/>
+        user={user}
+        resumeData={resumeData}
+        onLogout={handleLogout}
+        onResumeAnalysis={() => setShowUpload(true)}
+        setPage={setPage}
+      />
     );
   }
 
@@ -169,14 +160,6 @@ if (page === "skill-gap") {
     <SkillGap
       resumeData={resumeData}
       onBack={() => setPage("dashboard")}
-      onAnalysisComplete={(data) => {
-        setJobAnalysis(data);
-
-        localStorage.setItem(
-          "jobAnalysis",
-          JSON.stringify(data)
-        );
-      }}
     />
   );
 }
