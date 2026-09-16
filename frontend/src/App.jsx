@@ -1,9 +1,9 @@
+import React, { useEffect, useState } from "react";
 import API_BASE_URL from "./api";
 import JobRecommendations from "./components/JobRecommendations";
 import GitHubAnalysis from "./components/GitHubAnalysis";
 import JobReadiness from "./components/JobReadiness";
 import SkillGap from "./components/SkillGap";
-import { useEffect, useState } from "react";
 import CareerRoadmap from "./components/CareerRoadmap";
 import JobDescription from "./components/JobDescription";
 import Dashboard from "./components/Dashboard";
