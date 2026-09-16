@@ -1,5 +1,5 @@
 import { useState } from "react";
-import API_BASE_URL from "../../api";
+import API_BASE_URL from "../api";
 import "./JobDescription.css";
 function JobDescription({ resumeData, onBack }) {
 

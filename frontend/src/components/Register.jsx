@@ -1,4 +1,4 @@
-import API_BASE_URL from "../../api";
+import API_BASE_URL from "../api";
 import { useState } from "react";
 
 function Register({ onRegisterSuccess, onLogin }) {

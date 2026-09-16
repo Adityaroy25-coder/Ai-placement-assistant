@@ -1,5 +1,5 @@
 import { useState } from "react";
-import API_BASE_URL from "../../api";
+import API_BASE_URL from "../api";
 import "./ResumeUpload.css";
 import ResumeAnalysis from "./ResumeAnalysis";
 
