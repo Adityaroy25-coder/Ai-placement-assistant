@@ -4,13 +4,12 @@ import "./Dashboard.css";
 function Dashboard({
   user,
   resumeData,
+  jobAnalysis,
   onResumeAnalysis,
   onLogout,
   setPage,
 }) {
-  const [applications, setApplications] = useState([]);
-const [jobAnalysis, setJobAnalysis] = useState(null);
- const [recommendedJobs, setRecommendedJobs] = useState([]);
+ const [applications, setApplications] = useState([]);
  const [careerPrediction, setCareerPrediction] = useState(null);
  const [careerRoadmap, setCareerRoadmap] = useState(null);
  const [interviewResult, setInterviewResult] = useState(null);
@@ -23,15 +22,6 @@ useEffect(() => {
     );
 
   setApplications(savedApplications);
-
-  const savedJobAnalysis =
-    JSON.parse(
-      localStorage.getItem("jobAnalysis") || "null"
-    );
-
-  if (savedJobAnalysis) {
-    setJobAnalysis(savedJobAnalysis);
-  }
 
   const savedRecommendedJobs =
     JSON.parse(
